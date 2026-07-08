@@ -1,0 +1,304 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jelajahi keindahan warisan budaya Indonesia. Ananta menyajikan artikel dan informasi mendalam tentang sejarah, seni, dan budaya Nusantara."
+    />
+    <!-- Meta Information for SEO and Social Sharing -->
+    <meta
+      name="keywords"
+      content="Warisan Indonesia, Budaya Nusantara, Sejarah Indonesia, Seni Tradisional, Ananta"
+    />
+    <meta name="author" content="Ananta" />
+
+    <!-- Meta Open Graph for better social sharing -->
+    <meta
+      property="og:description"
+      content="Pelajari sejarah dan budaya Indonesia melalui artikel-artikel menarik di Ananta. Temukan kekayaan seni, tradisi, dan cerita Nusantara."
+    />
+    <meta property="og:title" content="Menjelajahi Warisan Budaya Indonesia" />
+    <meta property="og:image" content="CWC2666_Bahan/assets/logo.webp" />
+
+    <title>
+      Riwayat Acara | Menjelajahi Warisan Budaya Indonesia bersama Ananta
+    </title>
+    <!-- Title of the Document -->
+
+    <!-- Linking External CSS and Fonts -->
+    <link rel="stylesheet" href="CWC2666_Website/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="CWC2666_Bahan/Swiperjs v5.3.7/swiper-bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CWC2666_Bahan/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="CWC2666_Bahan/assets/logo.webp" />
+  </head>
+  <body>
+    <div id="custom-alert" class="alert hidden"></div>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="index.html" class="logo aos" data-delay="100">
+          <img class="logo" src="CWC2666_Bahan/assets/logo.webp" alt="ananta" />
+          Ananta.
+        </a>
+        <!-- UL Links -->
+        <ul class="nav-links" id="nav-links">
+          <li class="aos" data-delay="200"><a href="index.html">Beranda</a></li>
+          <li class="aos" data-delay="250">
+            <a href="index.html#about">Tentang</a>
+          </li>
+          <li class="aos d-none d-sm-block d-md-block" data-delay="250">
+            <a href="komunitas.html">Komunitas</a>
+          </li>
+          <li class="aos d-none d-sm-block d-md-block" data-delay="250">
+            <a href="event.html">Acara</a>
+          </li>
+          <li class="dropdown aos d-sm-none d-md-none" data-delay="290">
+            <a href="#" class="dropbtn"
+              >Program <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-content">
+              <li><a href="komunitas.html">Komunitas</a></li>
+              <li><a href="event.html">Acara</a></li>
+            </ul>
+          </li>
+          <li class="aos" data-delay="300">
+            <a href="artikel.html">Artikel</a>
+          </li>
+          <li class="d-flex center show gap aos" data-delay="200" id="btn">
+            <a href="index.html#service">
+              <button class="btn btn-b show">Jelajahi Warisan Budaya</button>
+            </a>
+            <div class="d-flex gap">
+              <button class="btn btn-b reg toggle-dark-mode">
+                <i class="fa fa-moon"></i>
+              </button>
+              <a href="login.html" class="user" id="user">
+                <button class="btn btn-b reg user">
+                  <i class="fa fa-user"></i>
+                </button>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div class="dm d-flex gap">
+          <a href="index.html#service">
+            <button class="btn btn-b reg">Jelajahi Warisan Budaya</button>
+          </a>
+          <div class="d-flex gap">
+            <button class="btn btn-b reg toggle-dark-mode">
+              <i class="fa fa-moon"></i>
+            </button>
+            <a href="login.html" class="user" id="user">
+              <button class="btn btn-b reg user">
+                <i class="fa fa-user"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="profiles">
+      <div class="container">
+        <div class="row start mb-2">
+          <div class="col-3 col-sm-12 col-md-3 mb">
+            <div class="sidebar d-sm-none d-md-block">
+              <div class="d-flex flex-col center align-center text-center">
+                <img
+                  src="CWC2666_Bahan/assets/profile.webp"
+                  class="card-img mb"
+                  alt=""
+                />
+                <h1 class="card-title">Budi Santoso</h1>
+                <p class="text mb-0">budi@gmail.com</p>
+                <div class="h-line"></div>
+              </div>
+              <ul class="side-links">
+                <li class="mb-1 mb-sm-3">
+                  <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+                </li>
+                <li class="mb-1 mb-sm-3">
+                  <a class="active" href="riwayat-event.html"
+                    ><i class="fa fa-calendar"></i> Riwayat Acara</a
+                  >
+                </li>
+                <li class="mb-4 mb-sm-3">
+                  <a href="riwayat-komunitas.html"
+                    ><i class="fa fa-book"></i> Riwayat Komunitas</a
+                  >
+                </li>
+              </ul>
+              <button type="submit" class="btn btn-b btn-w logout">
+                <i class="fa fa-door-open"></i>
+                logout
+              </button>
+            </div>
+            <!-- Sidebar Container -->
+            <div id="sidebar-overlay" class="sidebar-overlay"></div>
+            <div class="sidebar-container d-lg-none d-sm-block d-md-none">
+              <!-- Hamburger Menu -->
+              <button class="hamburger" id="hamburger-sidebar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+
+              <!-- Sidebar -->
+              <div
+                class="sidebar d-none d-sm-block d-md-none"
+                id="mobile-sidebar"
+              >
+                <ul class="side-links">
+                  <li class="mb-1 mb-sm-3">
+                    <a href="profile.html"
+                      ><i class="fa fa-user"></i> Profile</a
+                    >
+                  </li>
+                  <li class="mb-1 mb-sm-3">
+                    <a class="active" href="riwayat-event.html"
+                      ><i class="fa fa-calendar"></i> Riwayat Acara</a
+                    >
+                  </li>
+                  <li class="mb-4 mb-sm-3">
+                    <a href="riwayat-komunitas.html"
+                      ><i class="fa fa-book"></i> Riwayat Komunitas</a
+                    >
+                  </li>
+                </ul>
+                <button type="submit" class="btn btn-b btn-w logout">
+                  <i class="fa fa-door-open"></i>
+                  logout
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="v-line d-block d-sm-none d-md-block"></div>
+          <div class="col-8 col-sm-12 col-md-8" id="">
+            <div class="mb-1">
+              <h1 class="title-custom">Acara yang Diikuti</h1>
+            </div>
+            <div class="h-line"></div>
+            <div class="row mb aos" data-delay="300">
+              <div class="col-12">
+                <div class="grid grid-2 grid-sm-1 w-full">
+                  <a
+                    href="festival-rasa.html"
+                    class="card card-flex card-sm-block"
+                  >
+                    <div class="img-card-container">
+                      <img
+                        src="CWC2666_Bahan/assets/blog-1.webp"
+                        alt=""
+                        class="card-img-event"
+                      />
+                    </div>
+                    <div class="card-body d-flex flex-col between">
+                      <div class="mb">
+                        <h1 class="card-title mb-2">
+                          Festival Batik Indonesia 2025
+                        </h1>
+                        <p class="card-text text-clip">
+                          Rangkaian pameran batik, fashion show, dan workshop
+                          membatik langsung dari pengrajin terbaik.
+                        </p>
+                      </div>
+                      <ul class="event-details mb">
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-calendar"></i> 5 Oktober
+                          2025
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-map-marker"></i> Solo,
+                          Indonesia
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-ticket"></i> Gratis
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-users"></i> Maks. 1000
+                          peserta
+                        </li>
+                      </ul>
+                      <p class="card-title-nd mb-0">
+                        Selengkapnya
+                        <i class="fa fa-arrow-right"></i>
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="festival-rasa.html"
+                    class="card card-flex card-sm-block"
+                  >
+                    <div class="img-card-container">
+                      <img
+                        src="CWC2666_Bahan/assets/blog-2.webp"
+                        alt=""
+                        class="card-img-event"
+                      />
+                    </div>
+                    <div class="card-body d-flex flex-col between">
+                      <div class="mb">
+                        <h1 class="card-title mb-2">
+                          Festival Gamelan Nusantara
+                        </h1>
+                        <p class="card-text text-clip">
+                          Saksikan pertunjukan gamelan dari berbagai daerah,
+                          dengan kompetisi antar grup terbaik di Indonesia.
+                        </p>
+                      </div>
+                      <ul class="event-details mb">
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-calendar"></i> 12 November
+                          2025
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-map-marker"></i> Bandung,
+                          Indonesia
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-ticket"></i> Rp 50.000
+                        </li>
+                        <li class="card-text mb-2">
+                          <i class="b-primary fa fa-users"></i> Maks. 750
+                          peserta
+                        </li>
+                      </ul>
+                      <p class="card-title-nd mb-0">
+                        Selengkapnya
+                        <i class="fa fa-arrow-right"></i>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- External Scripts -->
+    <script src="CWC2666_Bahan/Swiperjs v5.3.7/swiper.min.js"></script>
+    <script src="CWC2666_Website/js/script.js"></script>
+    <script></script>
+  </body>
+</html>

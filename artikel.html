@@ -1,0 +1,580 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jelajahi keindahan warisan budaya Indonesia. Ananta menyajikan artikel dan informasi mendalam tentang sejarah, seni, dan budaya Nusantara."
+    />
+    <!-- Meta Information for SEO and Social Sharing -->
+    <meta
+      name="keywords"
+      content="Warisan Indonesia, Budaya Nusantara, Sejarah Indonesia, Seni Tradisional, Ananta"
+    />
+    <meta name="author" content="Ananta" />
+
+    <!-- Meta Open Graph for better social sharing -->
+    <meta
+      property="og:description"
+      content="Pelajari sejarah dan budaya Indonesia melalui artikel-artikel menarik di Ananta. Temukan kekayaan seni, tradisi, dan cerita Nusantara."
+    />
+    <meta property="og:title" content="Menjelajahi Warisan Budaya Indonesia" />
+    <meta property="og:image" content="CWC2666_Bahan/assets/logo.webp" />
+
+    <title>Artikel | Menjelajahi Warisan Budaya Indonesia bersama Ananta</title>
+    <!-- Title of the Document -->
+
+    <!-- Linking External CSS and Fonts -->
+    <link rel="stylesheet" href="CWC2666_Website/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="CWC2666_Bahan/Swiperjs v5.3.7/swiper-bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CWC2666_Bahan/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="CWC2666_Bahan/assets/logo.webp" />
+  </head>
+  <body>
+    <div id="custom-alert" class="alert hidden"></div>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="index.html" class="logo aos" data-delay="100">
+          <img class="logo" src="CWC2666_Bahan/assets/logo.webp" alt="ananta" />
+          Ananta.
+        </a>
+        <!-- UL Links -->
+        <ul class="nav-links" id="nav-links">
+          <li class="aos" data-delay="200"><a href="index.html">Beranda</a></li>
+          <li class="aos" data-delay="250">
+            <a href="index.html#about">Tentang</a>
+          </li>
+          <li class="aos d-none d-sm-block d-md-block" data-delay="250">
+            <a href="komunitas.html">Komunitas</a>
+          </li>
+          <li class="aos d-none d-sm-block d-md-block" data-delay="250">
+            <a href="event.html">Acara</a>
+          </li>
+          <li class="dropdown aos d-sm-none d-md-none" data-delay="290">
+            <a href="#" class="dropbtn"
+              >Program <i class="fa fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-content">
+              <li><a href="komunitas.html">Komunitas</a></li>
+              <li><a href="event.html">Acara</a></li>
+            </ul>
+          </li>
+          <li class="aos" data-delay="300">
+            <a href="artikel.html" class="active">Artikel</a>
+          </li>
+          <li class="d-flex center show gap aos" data-delay="200" id="btn">
+            <a href="index.html#service">
+              <button class="btn btn-b show">Jelajahi Warisan Budaya</button>
+            </a>
+            <div class="d-flex gap">
+              <button class="btn btn-b reg toggle-dark-mode">
+                <i class="fa fa-moon"></i>
+              </button>
+              <a href="profile.html" class="user" id="user">
+                <button class="btn btn-b reg user">
+                  <i class="fa fa-user"></i>
+                </button>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div class="dm d-flex gap">
+          <a href="index.html#service">
+            <button class="btn btn-b reg">Jelajahi Warisan Budaya</button>
+          </a>
+          <div class="d-flex gap">
+            <button class="btn btn-b reg toggle-dark-mode">
+              <i class="fa fa-moon"></i>
+            </button>
+            <a href="profile.html" class="user" id="user">
+              <button class="btn btn-b reg user">
+                <i class="fa fa-user"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-nd">
+      <div class="container">
+        <div class="row gap-large gap-md gap-sm-n">
+          <div class="col-12">
+            <div class="text-center">
+              <h1 class="title-hero mb-4 aos" data-delay="200">
+                Menjelajahi Keanekaragaman
+                <span class="highlight">Budaya Nusantara</span>
+              </h1>
+
+              <div class="d-flex gap center mb-4 aos" data-delay="200">
+                <input
+                  class="form-input search"
+                  type="text"
+                  placeholder="Cari artikel budaya, sejarah, kuliner, atau tradisi..."
+                />
+                <button class="btn btn-a search">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+
+              <div class="d-flex gap-large padding-custom center w-full">
+                <div class="text-center aos" data-delay="200">
+                  <h1 class="title-custom mb-0 counter" data-target="120">0</h1>
+                  <p class="text center">Artikel Budaya</p>
+                </div>
+                <div class="text-center aos" data-delay="250">
+                  <h1 class="title-custom mb-0 counter" data-target="34">0</h1>
+                  <p class="text center">Daerah</p>
+                </div>
+                <div class="text-center aos" data-delay="200">
+                  <h1 class="title-custom mb-0 counter" data-target="8">0</h1>
+                  <p class="text center">Kategori Artikel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container container-toples">
+        <div class="row mb aos" data-delay="300">
+          <div class="col-12">
+            <div
+              class="grid grid-4 grid-md-2 grid-sm-1 w-full"
+              id="article-container"
+            >
+              <!-- Blog Card 1 -->
+              <a href="batik.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-1.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">5 Februari 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Mengenal Batik: Warisan Budaya yang Mendunia
+                  </h1>
+                  <p class="card-text text-clip">
+                    Batik bukan sekadar kain, tetapi juga cerita yang diwariskan
+                    turun-temurun
+                  </p>
+                </div>
+              </a>
+              <!-- Blog Card 2 -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-2.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">10 Februari 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Filosofi di Balik Tari Tradisional Masyarakat Bali
+                  </h1>
+                  <p class="card-text text-clip">
+                    Setiap gerakan dalam tari tradisional memiliki makna
+                    mendalam yang menarik
+                  </p>
+                </div>
+              </a>
+              <!-- Blog Card 3 -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-3.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">15 Februari 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Kuliner Nusantara: Rasa yang Menyatukan Budaya
+                  </h1>
+                  <p class="card-text text-clip">
+                    Makanan tidak hanya mengenyangkan, tapi juga menjadi
+                    identitas budaya kita
+                  </p>
+                </div>
+              </a>
+              <!-- Blog Card 4 -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-4.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">10 Maret 2024</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Keindahan Seni Ukir Nusantara, Terukir dalam Sejarah
+                  </h1>
+                  <p class="card-text text-clip">
+                    Seni ukir telah menjadi bagian dari identitas budaya
+                    Indonesia, memperkaya warisan seni dan arsitektur dari
+                    generasi ke generasi.
+                  </p>
+                </div>
+              </a>
+              <!-- Blog Card 5: Seni Pertunjukan -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-5.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">25 Februari 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Musik Tradisional: Harmoni yang Menyentuh Jiwa
+                  </h1>
+                  <p class="card-text text-clip">
+                    Setiap nada dalam musik tradisional mengandung cerita dan
+                    filosofi yang dalam
+                  </p>
+                </div>
+              </a>
+
+              <!-- Blog Card 6: Seni Tulis -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-6.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">1 Maret 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Aksara Nusantara: Warisan Tulisan Kuno
+                  </h1>
+                  <p class="card-text text-clip">
+                    Aksara Jawa, Lontara, dan aksara lainnya menjadi bukti
+                    kekayaan budaya Indonesia
+                  </p>
+                </div>
+              </a>
+
+              <!-- Blog Card 7: Makanan -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-7.webp"
+                    alt="Lukisan Indonesia"
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">5 Maret 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Lukisan Klasik Indonesia yang Melegenda
+                  </h1>
+                  <p class="card-text text-clip">
+                    Dari Affandi hingga Raden Saleh, seni lukis Indonesia
+                    memiliki sejarah panjang dan keindahan yang luar biasa.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Blog Card 8: Cerita Dongeng -->
+              <a href="tari-bali.html" class="card">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-8.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">10 Maret 2023</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">Legenda dan Dongeng Nusantara</h1>
+                  <p class="card-text text-clip">
+                    Cerita rakyat seperti Malin Kundang dan Timun Mas terus
+                    diceritakan hingga kini
+                  </p>
+                </div>
+              </a>
+              <!-- hidden -->
+
+              <a href="tari-bali.html" class="card hidden-article">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-12.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">12 Maret 2024</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Keris: Senjata Sakti yang Penuh Sejarah
+                  </h1>
+                  <p class="card-text text-clip">
+                    Keris bukan sekadar senjata, tetapi memiliki makna spiritual
+                    dan filosofi mendalam.
+                  </p>
+                </div>
+              </a>
+              <a href="tari-bali.html" class="card hidden-article">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-13.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">15 Maret 2024</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Jamu: Ramuan Tradisional yang Mendunia
+                  </h1>
+                  <p class="card-text text-clip">
+                    Jamu adalah warisan pengobatan alami dari nenek moyang yang
+                    masih digunakan hingga kini.
+                  </p>
+                </div>
+              </a>
+              <a href="tari-bali.html" class="card hidden-article">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-14.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">18 Maret 2024</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Cerita Daerah: Warisan Sastra Nusantara
+                  </h1>
+                  <p class="card-text text-clip">
+                    Setiap daerah memiliki cerita rakyat yang kaya akan nilai
+                    budaya dan sejarah.
+                  </p>
+                </div>
+              </a>
+              <a href="tari-bali.html" class="card hidden-article">
+                <div class="img-card-container mb">
+                  <img
+                    src="CWC2666_Bahan/assets/blog-15.webp"
+                    alt=""
+                    class="card-img-blog"
+                  />
+                </div>
+                <div class="d-flex between align-center mb">
+                  <p class="card-text mb-0">20 Maret 2024</p>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title mb-2">
+                    Teater Komedi: Hiburan Rakyat yang Sarat Makna
+                  </h1>
+                  <p class="card-text text-clip">
+                    Dari Srimulat hingga Lenong, teater komedi menjadi cermin
+                    kehidupan sosial dengan humor khasnya.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center items-center">
+          <div class="col-12">
+            <p id="no-results" class="text center mt-4 mb none">
+              Artikel tidak ditemukan
+            </p>
+
+            <!-- <a href="artikel.html" class="text aos" data-delay="200"> -->
+            <button class="btn btn-a" id="load-more">
+              Lebih Banyak Artikel
+            </button>
+            <!-- </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="container">
+        <div class="container-b">
+          <div class="row center text-center">
+            <div class="col-12">
+              <div class="align-center">
+                <h1 class="title white mb-1 mb-sm-2 aos" data-delay="200">
+                  Saatnya
+                  <span class="white">Mengenal & Melestarikan</span> Budaya
+                  Nusantara!
+                </h1>
+                <p class="text center white mb-sm-2 aos" data-delay="200">
+                  Bergabunglah dengan Ananta dan jadilah bagian dari gerakan
+                  yang melestarikan budaya Indonesia. Bersama, kita dapat
+                  menjaga warisan leluhur, mengenalkan tradisi kepada generasi
+                  baru. Mari berkontribusi dan tunjukkan kecintaan kita pada
+                  budaya bangsa!
+                </p>
+                <div class="d-flex gap d-sm-block center aos" data-delay="300">
+                  <a href="index.html">
+                    <button class="btn btn-b mb-sm-2">Gabung Sekarang</button>
+                  </a>
+                  <a href="index.html#about">
+                    <button class="btn btn-c">Pelajari Lebih Lanjut</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer"></div>
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-4 col-sm-12">
+            <div class="mb aos" data-delay="200">
+              <a href="index.html" class="logo white">
+                <img
+                  class="logo"
+                  src="CWC2666_Bahan/assets/logo-2.webp"
+                  id="about-image-dark"
+                  alt="ananta"
+                />
+                <img
+                  class="logo"
+                  src="CWC2666_Bahan/assets/logo-3.webp"
+                  id="about-image-light"
+                  alt="ananta"
+                />
+                Ananta.
+              </a>
+            </div>
+            <p class="text white aos" data-delay="200">
+              Ananta hadir untuk membawamu lebih dekat dengan kekayaan budaya
+              Indonesia. Jelajahi artikel, tonton dokumenter, dan ikuti event
+              budaya bersama kami!
+            </p>
+            <div class="mb"></div>
+            <div class="d-flex gap mb-sm-2 aos" data-delay="50">
+              <a
+                href="https://wa.me/62881037418040?text=Halo%20Ananta!%20Saya%20tertarik%20dengan%20konten%20budaya%20Anda.%20Bisakah%20kita%20diskusikan%20lebih%20lanjut?"
+              >
+                <div class="icon align-center">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/gedesi9n">
+                <div class="icon align-center">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+              <a href="#">
+                <div class="icon align-center">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+              </a>
+              <a href="#">
+                <div class="icon align-center">
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigasi Cepat, Layanan, dan Keunggulan -->
+          <div class="col-6 col-md-6 col-sm-12">
+            <div class="grid grid-3 grid-sm-2 mb">
+              <div class="f-box aos" data-delay="200">
+                <h1 class="title small white">Navigasi Cepat</h1>
+                <p class="text white">Beranda</p>
+                <p class="text white">Artikel Budaya</p>
+                <p class="text white">Komunitas</p>
+                <p class="text white">Acara & Lokakarya</p>
+              </div>
+              <div class="f-box aos" data-delay="250">
+                <h1 class="title small white">Layanan Kami</h1>
+                <p class="text white">Artikel Budaya</p>
+                <p class="text white">Video Dokumenter</p>
+                <p class="text white">Komunitas Budaya</p>
+                <p class="text white">Acara & Lokakarya</p>
+              </div>
+              <div class="f-box aos" data-delay="300">
+                <h1 class="title small white">Mengapa Ananta?</h1>
+                <p class="text white">Konten Budaya Berkualitas</p>
+                <p class="text white">Akses Gratis & Mudah</p>
+                <p class="text white">Komunitas yang Aktif</p>
+                <p class="text white">Acara Budaya Interaktif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Garis Horizontal dan Hak Cipta -->
+        <div class="h-line white"></div>
+        <div class="footer text-center">
+          <p class="text white">
+            &copy; 2024 Ananta. Seluruh hak cipta dilindungi.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- External Scripts -->
+    <script src="CWC2666_Bahan/Swiperjs v5.3.7/swiper.min.js"></script>
+    <script src="CWC2666_Website/js/script.js"></script>
+    <script></script>
+  </body>
+</html>
