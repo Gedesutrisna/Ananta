@@ -58,34 +58,34 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Counter animation
-document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll('.counter');
+// // Counter animation
+// document.addEventListener("DOMContentLoaded", () => {
+//     const counters = document.querySelectorAll('.counter');
 
-    if (counters.length > 0) {
-        const animateCounter = counter => {
-            let count = 0, target = +counter.dataset.target, step = target / 100;
-            const update = () => {
-                count += step;
-                counter.innerText = (count < target) ? Math.ceil(count) + '+' : target + '+';
-                if (count < target) requestAnimationFrame(update);
-            };
-            update();
-        };
+//     if (counters.length > 0) {
+//         const animateCounter = counter => {
+//             let count = 0, target = +counter.dataset.target, step = target / 100;
+//             const update = () => {
+//                 count += step;
+//                 counter.innerText = (count < target) ? Math.ceil(count) + '+' : target + '+';
+//                 if (count < target) requestAnimationFrame(update);
+//             };
+//             update();
+//         };
 
-        const checkCounters = () => {
-            counters.forEach(counter => {
-                if (counter.getBoundingClientRect().top < window.innerHeight * 0.98 && !counter.classList.contains('animated')) {
-                    counter.classList.add('animated');
-                    animateCounter(counter);
-                }
-            });
-        };
+//         const checkCounters = () => {
+//             counters.forEach(counter => {
+//                 if (counter.getBoundingClientRect().top < window.innerHeight * 0.98 && !counter.classList.contains('animated')) {
+//                     counter.classList.add('animated');
+//                     animateCounter(counter);
+//                 }
+//             });
+//         };
 
-        window.addEventListener("scroll", checkCounters);
-        checkCounters();
-    }
-});
+//         window.addEventListener("scroll", checkCounters);
+//         checkCounters();
+//     }
+// });
 
 // Dark mode toggle
 document.addEventListener("DOMContentLoaded", () => {
@@ -113,24 +113,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
 });
 
-// AOS animation trigger
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".aos");
+// // AOS animation trigger
+// document.addEventListener("DOMContentLoaded", () => {
+//     const elements = document.querySelectorAll(".aos");
 
-    if (elements.length > 0) {
-        const checkElements = () => elements.forEach(el => {
-            if (el.getBoundingClientRect().top < window.innerHeight * 0.98) {
-                setTimeout(() => el.classList.add("aos-show"), el.dataset.delay || 0);
-            } else {
-                el.classList.remove("aos-show");
-            }
-        });
+//     if (elements.length > 0) {
+//         const checkElements = () => elements.forEach(el => {
+//             if (el.getBoundingClientRect().top < window.innerHeight * 0.98) {
+//                 setTimeout(() => el.classList.add("aos-show"), el.dataset.delay || 0);
+//             } else {
+//                 el.classList.remove("aos-show");
+//             }
+//         });
 
-        window.addEventListener("scroll", checkElements);
-        checkElements();
-    }
-});
-
+//         window.addEventListener("scroll", checkElements);
+//         checkElements();
+//     }
+// });
 
 // Comments & Like
 document.addEventListener("DOMContentLoaded", function () {
