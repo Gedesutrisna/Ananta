@@ -655,7 +655,7 @@ li#btn {
   display: none;
 }
 
-/* .aos {
+.aos {
   opacity: 0;
   transform: translateY(50px) scale(0.9);
   transition:
@@ -666,7 +666,7 @@ li#btn {
 .aos-show {
   opacity: 1;
   transform: translateY(0) scale(1);
-} */
+}
 
 /* upload image */
 .box-upload-image-custom {
